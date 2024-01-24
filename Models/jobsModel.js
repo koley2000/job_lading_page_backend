@@ -18,6 +18,10 @@ const JobsSchema = new Schema({
         type: String,
         required: true,
     },
+    experience: {
+        type: Number,
+        required: true,
+    },
     min_salary: {
         type: Number,
         required: true,

@@ -19,13 +19,13 @@ router.post('/addjob', async (req, res) => {
     try {
         const {
             position, company_name, job_pipeline,
-            add_location, min_salary, max_salary, skills_required,
+            add_location, experience,min_salary, max_salary, skills_required,
             intern_responsibilites
         } = req.body;
 
         const job = new Jobs({
             position, company_name, job_pipeline,
-            add_location, min_salary, max_salary, skills_required,
+            add_location, experience,min_salary, max_salary, skills_required,
             intern_responsibilites
         });
         const savedJob = await job.save();
